@@ -1,8 +1,16 @@
 #!/bin/bash
 
+# Titulo: Backup Servidor de Arquivos
+
+# Descrição: Script simples que realizar um 
+# backup da pasta compartilhada pelo Samba
+
+
 #####################################################################
 
+
 # Declaração das variáveis utilizados no script.
+
 
 #####################################################################
 
@@ -20,7 +28,9 @@ nome_arquivo="backup_servidor_$data.tar.gz"
 
 #####################################################################
 
+
 # Seção de execução do backup.
+
 
 #####################################################################
 
@@ -28,7 +38,7 @@ nome_arquivo="backup_servidor_$data.tar.gz"
 
 tar -zcvf $destino_backup/$nome_arquivo $pasta_backup
 
-# Comando para forçar a saída do script.
+# Comando para forçar a saída do script. Desnecessário, mas não custa nada! 
 
 exit
 
