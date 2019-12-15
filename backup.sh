@@ -36,7 +36,7 @@ nome_arquivo="backup_servidor_$data.tar.gz"
 
 # Comando para compactar o diretório
 
-tar -zcvf $destino_backup/$nome_arquivo $pasta_backup
+tar -zcvf $destino_backup/$nome_arquivo $pasta_backup > log_backup.txt 2>&1
 
 # Comando para forçar a saída do script. Desnecessário, mas não custa nada! 
 
